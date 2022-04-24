@@ -1,0 +1,20 @@
+.table{
+    background: linear-gradient(-68deg, var(--purple-1) , var(--blue-2));
+    border-radius: 0.5rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+.table th, .table td{
+    padding: 1rem;
+}
+
+.table tbody tr:nth-child(odd){
+    background-color: #ffffff18;
+}
+
+.table tbody tr:hover{
+    background-color: #ffffff36;
+}
+
