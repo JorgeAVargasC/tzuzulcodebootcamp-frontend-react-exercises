@@ -1,15 +1,11 @@
 .card{
     background: var(--dark-2);
-    /* background: linear-gradient(-68deg, var(--purple-1) , var(--blue-2)); */
     border-radius: 5px;
-    min-width: 250px;    
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    min-width: 250px;
+    margin-bottom: 1.2rem;
     padding: 20px;
     color: #fff;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);    
 }
 
 .card p:first-of-type::after{
@@ -24,7 +20,6 @@
 
 .card:hover{
     transform: translateX(20px);
-    /* background: linear-gradient(-68deg, var(--orange-1) , var(--red-2)); */
     background: linear-gradient(-68deg, var(--purple-1) , var(--blue-2));
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
