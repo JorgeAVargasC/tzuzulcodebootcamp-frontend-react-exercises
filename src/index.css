@@ -71,7 +71,7 @@ p{
 }
 
 .container{
-    width: 85%;
+    width: 84%;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -82,4 +82,8 @@ p{
 
 .container h3{
     margin-bottom: 1rem;
+}
+
+.container h2{
+    text-align: center;
 }
