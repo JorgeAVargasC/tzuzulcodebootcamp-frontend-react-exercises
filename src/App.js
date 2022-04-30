@@ -1,5 +1,7 @@
 import Lista from "./components/Lista/Lista";
 import Tabla from "./components/Tabla/Tabla";
+import Estado from "./components/Estado/Estado";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -34,7 +36,73 @@ function App() {
 			nombre: "Pedro",
 			edad: "19",
 			calificaciones: [7, 2, 9, 5]
-		}
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
+		{
+			id: "al-06",
+			nombre: "Juan",
+			edad: "20",
+			calificaciones: [4, 8, 7, 6]
+		},
 	]
 
 	return (
@@ -44,6 +112,7 @@ function App() {
 					<Route path="/" element={<Lista alumnos={alumnos} />} />
 					<Route path="/lista" element={<Lista alumnos={alumnos} />} />
 					<Route path="/tabla" element={<Tabla alumnos={alumnos} />} />
+					<Route path="/estado" element={<Estado />} />
 				</Routes>
 			</Router>
 		</div>

@@ -1,9 +1,10 @@
 .table{
-    background: linear-gradient(-68deg, var(--purple-1) , var(--blue-2));
+    background: var(--gradient-1);
     border-radius: 0.5rem;
     text-align: center;
     border-collapse: collapse;
     max-width: 85%;
+    margin-bottom: 3rem;
 }
 
 .table th, .table td{

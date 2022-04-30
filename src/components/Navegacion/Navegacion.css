@@ -1,11 +1,11 @@
 .navbar {
-	width: 100%;
+	width: 84%;
 	height: 10vh;
 	padding: 1rem 0;
 	position: fixed;
 	top: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #151625;
 	z-index: 30;
 }
@@ -14,7 +14,6 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	width: 84%;
 }
 
 nav .links{
@@ -33,5 +32,9 @@ nav .links:last-of-type{
 nav .links:hover{
 	color: var(--light-1);
 	transition-duration: 0.4s;
+}
+
+.active-link{
+	color: var(--light-1);
 }
 
