@@ -90,7 +90,8 @@ p{
 }
 
 .input{
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     height: 2.5rem;
     border: none;
     border-radius: 0.2rem;
@@ -103,7 +104,8 @@ p{
 }
 
 .btn{
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     height: 2.5rem;
     border: none;
     border-radius: 0.2rem;

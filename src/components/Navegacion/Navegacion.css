@@ -1,13 +1,21 @@
 .navbar {
-	width: 84%;
+	width: 100%;
 	height: 10vh;
 	padding: 1rem 0;
 	position: fixed;
 	top: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 	background-color: #151625;
 	z-index: 30;
+}
+
+.navbar-content{
+	width: 84%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 nav {

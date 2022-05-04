@@ -14,7 +14,9 @@ export default function Estado() {
     const sendMessage = () => {
 
         messages.push(content)
-        setMessages([...messages])
+        setMessages(messages)
+        console.clear()
+        console.table(messages)
         setContent('')
         // Reto: Explicar el reto
     }
@@ -32,7 +34,7 @@ export default function Estado() {
 
                 <h3 className='stateMessages'>Mensajes</h3>
                 <ul>
-                    {messages.map(message => <li>{message}</li>)}
+                    {messages.map((message,index) => <li key={index}>{message}</li>)}
                 </ul>
             </div>
         </>
