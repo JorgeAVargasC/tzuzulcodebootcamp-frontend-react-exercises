@@ -4,20 +4,20 @@ import './Estado.css'
 
 export default function Estado() {
 
-    const [content, setContent] = React.useState('')
+    const [content, setContent] = React.useState({texto: ''})
     const [messages, setMessages] = React.useState([])
 
     const changeInput = (e) => {
-        setContent(e.target.value)
+        content.texto = e.target.value
+        setContent({...content})
     }
 
     const sendMessage = () => {
 
-        messages.push(content)
-        setMessages(messages)
-        console.clear()
-        console.table(messages)
-        setContent('')
+        messages.push(content.texto)
+        setMessages([...messages]) // Estoy pasandole un nuevo array
+        content.texto = ''
+        setContent({...content})
         // Reto: Explicar el reto
     }
 
@@ -29,7 +29,7 @@ export default function Estado() {
                 <h2>Envío de mensajes</h2>
                 <h3>Tarea - 3</h3>
                 {/* <p>{content}</p> */}
-                <input className='input' type="text" value={content} onChange={changeInput} />
+                <input className='input' type="text" value={content.texto} onChange={changeInput} />
                 <button className='btn' onClick={sendMessage}>Enviar</button>
 
                 <h3 className='stateMessages'>Mensajes</h3>
