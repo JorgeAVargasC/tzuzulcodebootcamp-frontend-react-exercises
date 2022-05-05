@@ -18,6 +18,11 @@
 	align-items: center;
 }
 
+.navbar-content h2{
+	position: relative;
+	z-index: 30;
+}
+
 nav {
 	display: flex;
 	justify-content: flex-end;
@@ -69,13 +74,8 @@ nav .links:hover{
 	width: 84%;
 	padding: 0.6rem;
 	margin: 0;
-	margin-bottom: 1rem;	
+	margin-top: 1rem;	
 }
-
-.navlinks-mobile .links:last-of-type{
-	margin-bottom: 0;
-}
-
 
 .navlinks {
 	display: none;

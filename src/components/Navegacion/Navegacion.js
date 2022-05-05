@@ -5,21 +5,26 @@ import './Navegacion.css'
 
 const Navegacion = () => {
 
-	const [open, setOpen] = useState(false)
+	// Dlecaración de la variable de estado
+	const [navBarOpen, setNavBarOpen] = useState(false)
 
 	return (
 		<div className='navbar'>
 			<div className='navbar-content'>
 				<h2>JV</h2>
-				<nav className={open ? 'navlinks-mobile' : 'navlinks'} onClick={() => setOpen(false)}>
+				<nav className={navBarOpen ? 'navlinks-mobile' : 'navlinks'} onClick={() => setNavBarOpen(false)}>
+					{navBarOpen ? <h2>Menu</h2> : null}
+					{navBarOpen ? <h3>Tarea - 4</h3> : null}
+
 					<NavLink to="/lista" className='links' >Lista</NavLink>
 					<NavLink to="/tabla" className='links' >Tabla</NavLink>
 					<NavLink to="/estado" className='links' >Estado</NavLink>
+					<NavLink to="/effects" className='links' >Effect</NavLink>
 				</nav>
 				<Hamburger
                     rounded
-                    toggled={open}
-                    toggle={setOpen}
+                    toggled={navBarOpen}   // false -> hamburger , true -> cross
+                    toggle={setNavBarOpen} // setNavBarOpen(navBarOpen => !navBarOpen)
                     direction='left'
                     duration={0.6}
                 />
