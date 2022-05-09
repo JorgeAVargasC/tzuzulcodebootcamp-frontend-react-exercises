@@ -1,0 +1,9 @@
+@media (min-width: 1268px) {
+	.gridContainer {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1rem;
+		justify-items: center;
+		align-items: center;
+	}
+}

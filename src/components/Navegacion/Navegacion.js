@@ -11,7 +11,7 @@ const Navegacion = () => {
 	return (
 		<div className='navbar'>
 			<div className='navbar-content'>
-				<h2>JV</h2>
+				<h1>JV</h1>
 				<nav className={navBarOpen ? 'navlinks-mobile' : 'navlinks'} onClick={() => setNavBarOpen(false)}>
 					{navBarOpen ? <h2>Menu</h2> : null}
 					{navBarOpen ? <h3>Tarea - 4</h3> : null}
