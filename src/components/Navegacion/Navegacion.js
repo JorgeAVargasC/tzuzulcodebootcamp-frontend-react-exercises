@@ -20,6 +20,8 @@ const Navegacion = () => {
 					<NavLink to="/tabla" className='links' >Tabla</NavLink>
 					<NavLink to="/estado" className='links' >Estado</NavLink>
 					<NavLink to="/effects" className='links' >Effect</NavLink>
+					<NavLink to="/references" className='links' >References</NavLink>
+					<NavLink to="/context" className='links' >Context</NavLink>
 				</nav>
 				<Hamburger
                     rounded

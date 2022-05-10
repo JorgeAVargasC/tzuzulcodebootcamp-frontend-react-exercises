@@ -14,12 +14,10 @@ const Lista = ({ alumnos }) => {
                 <div className="gridContainer">
                     {alumnos.map((alumno) => {
                         return (
-
                             <div key={alumno.id} className="card">
                                 <p>{alumno.nombre}</p>
                                 <p>{alumno.edad} años</p>
                             </div>
-
                         )
                     })}
                 </div>

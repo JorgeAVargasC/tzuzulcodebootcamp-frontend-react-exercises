@@ -2,6 +2,8 @@ import Lista from "./components/Lista/Lista";
 import Tabla from "./components/Tabla/Tabla";
 import Estado from "./components/Estado/Estado";
 import Effects from "./components/Effect/Effects";
+import References from "./components/References/References";
+import Context from "./components/Context/Context";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -115,6 +117,8 @@ function App() {
 					<Route path="/tabla" element={<Tabla alumnos={alumnos} />} />
 					<Route path="/estado" element={<Estado />} />
 					<Route path="/effects" element={<Effects />} />
+					<Route path="/references" element={<References />} />
+					<Route path="/context" element={<Context/>}/>
 				</Routes>
 			</Router>
 		</div>
