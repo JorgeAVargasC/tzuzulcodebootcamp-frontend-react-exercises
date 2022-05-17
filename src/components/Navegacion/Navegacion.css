@@ -7,7 +7,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #151625;
+	background-color: var(--dark-1);
 	z-index: 30;
 }
 
@@ -21,6 +21,11 @@
 .navbar-content h2{
 	position: relative;
 	z-index: 30;
+}
+
+nav .btn{
+	margin: 0;
+	margin-top: 1rem;
 }
 
 nav {
@@ -47,6 +52,10 @@ nav .links:hover{
 	transition-duration: 0.4s;
 }
 
+.hamburger-react{
+	color: var(--light-1);
+}
+
 .active-link{
 	color: var(--light-1);
 }
@@ -54,6 +63,7 @@ nav .links:hover{
 .navlinks-mobile {
 	width: 100%;
 	background-color: var(--dark-1);
+	color: var(--light-1);
 	display: flex;
 	padding-top: 5rem;
 	justify-content: flex-start;
@@ -98,6 +108,12 @@ nav .links:hover{
 
 /* Desktop */
 @media (min-width: 1269px) {
+
+	nav .btn{
+		margin: 0;
+		margin-right: 1rem;
+	}
+
 	.hamburger-react {
 		display: none;
 	}

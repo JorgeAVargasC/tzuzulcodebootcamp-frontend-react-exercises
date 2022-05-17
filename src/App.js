@@ -1,9 +1,13 @@
+import { useContext } from "react";
+
 import Lista from "./components/Lista/Lista";
 import Tabla from "./components/Tabla/Tabla";
 import Estado from "./components/Estado/Estado";
 import Effects from "./components/Effect/Effects";
 import References from "./components/References/References";
 import Context from "./components/Context/Context";
+
+import { themeContext } from "./components/Context/Theme";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -108,8 +112,10 @@ function App() {
 		},
 	]
 
+	const { theme, toggleTheme } = useContext(themeContext);
+
 	return (
-		<div className="App">
+		<div className={theme === 'light' ? 'App light-mode':'App dark-mode'}>
 			<Router>
 				<Routes>
 					<Route path="/" element={<Lista alumnos={alumnos} />} />

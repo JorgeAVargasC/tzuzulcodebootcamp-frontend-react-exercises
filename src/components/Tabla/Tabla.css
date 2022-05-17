@@ -1,5 +1,6 @@
 .table{
     background: var(--gradient-1);
+    color: var(--light-1);
     border-radius: 0.5rem;
     text-align: center;
     border-collapse: collapse;
